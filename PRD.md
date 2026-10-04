@@ -1,6 +1,6 @@
 # NIFTY 50 Interactive Market Dashboard — Product Requirements Document
 
-> **Implementation update (4 October 2026):** The project owner later requested a Streamlit implementation. This overrides the original static GitHub Pages/marimo deployment architecture below. The current app entry point is root `app.py`; deployment is through Streamlit Community Cloud. GitHub Pages cannot execute the Streamlit server.
+> **Implementation update (4 October 2026):** The project owner later requested a Streamlit implementation. This overrides the original static GitHub Pages/marimo deployment architecture below. The current app entry point is root `app.py`; deployment is through Streamlit Community Cloud. GitHub Pages cannot execute the Streamlit server. The latest requested scope also adds GFG-inspired styling, Open/High/Low/Close analysis, range-based hypothetical P&L, a hindsight entry scan, historical and projected SIP calculations, and a user-dated festival event study.
 
 **Status:** Product and implementation brief  
 **Version:** 1.0  

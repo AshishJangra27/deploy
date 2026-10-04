@@ -5,8 +5,11 @@ An interactive NIFTY 50 history dashboard built with Python, Streamlit, pandas a
 ## Features
 
 - Choose a preset period or set a custom date range.
-- Switch between a closing-price chart and OHLC candles.
+- Choose Open, High, Low, or Close as the price field for range return and hypothetical P&L; view the selected field or OHLC candles.
 - Explore daily and monthly returns, drawdown, rolling annualized volatility and summary metrics.
+- Scan for the best historical entry over a chosen holding period (hindsight analysis).
+- Compare a historical monthly SIP in the chosen date range and estimate a future SIP from an assumed annual return.
+- Select a festival/date and compare the market for a chosen number of trading sessions before and after it.
 - Inspect recent observations and download the selected range as CSV.
 
 ## Run locally
