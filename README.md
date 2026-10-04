@@ -11,7 +11,7 @@ NiftyScope is a Python-first interactive dashboard for exploring daily NIFTY 50 
 
 ## Run locally
 
-Python 3.11 or later is recommended.
+Python 3.11 or later is recommended. The requirements install `uv`, which marimo uses to resolve the notebook's inline dependencies during WebAssembly export.
 
 ```bash
 python -m venv .venv

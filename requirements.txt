@@ -1,3 +1,4 @@
 marimo==0.24.0
 pandas==2.2.3
 plotly==6.1.2
+uv>=0.8,<1
