@@ -1,5 +1,7 @@
 # NIFTY 50 Interactive Market Dashboard — Product Requirements Document
 
+> **Implementation update (4 October 2026):** The project owner later requested a Streamlit implementation. This overrides the original static GitHub Pages/marimo deployment architecture below. The current app entry point is root `app.py`; deployment is through Streamlit Community Cloud. GitHub Pages cannot execute the Streamlit server.
+
 **Status:** Product and implementation brief  
 **Version:** 1.0  
 **Date:** 4 October 2026  
@@ -345,4 +347,3 @@ Do not label a return calculated only from index closes as total shareholder ret
 
 - [Dataset file on GitHub](https://github.com/AshishJangra27/datasets/blob/main/Nifty-50/data.csv)
 - [Corrected raw CSV URL](https://raw.githubusercontent.com/AshishJangra27/datasets/main/Nifty-50/data.csv)
-
