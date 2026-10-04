@@ -33,13 +33,9 @@ def _():
 @app.cell
 def _(mo, pd):
     data_path = mo.notebook_location() / "public" / "nifty50.csv"
-    if not data_path.exists():
-        raise FileNotFoundError(
-            "The bundled NIFTY 50 data file is missing. Run "
-            "python scripts/refresh_data.py before opening or exporting the app."
-        )
-
-    raw = pd.read_csv(data_path, parse_dates=["Date"])
+    # In a WebAssembly export notebook_location() is a URLPath, not pathlib.Path.
+    # Passing its string form works in both local Python and the browser runtime.
+    raw = pd.read_csv(str(data_path), parse_dates=["Date"])
     expected = ["Date", "Open", "High", "Low", "Close"]
     if list(raw.columns) != expected:
         raise ValueError(f"Expected CSV columns {expected}; found {list(raw.columns)}")
